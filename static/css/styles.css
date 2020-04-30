@@ -1,0 +1,167 @@
+/* background picture */
+
+.home {
+background: url(img/records.jpg) no-repeat center center fixed;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.books {
+background: url(img/books4.jpg) no-repeat center center fixed;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.movies {
+background: url(img/movies.jpg) no-repeat center center fixed;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.music {
+background: url(img/music3.jpg) no-repeat center center fixed;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: brown;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+
+/* Styles for navigation (flexbox)*/
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+
+  list-style: none;
+  margin: 0;
+  background: brown;
+  border-radius: 20px;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover {
+  background: #b54535;
+}
+
+ .navigation .current {
+     background: #b54535 ;
+ }
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+
+}
+
+/* Allow navigation to appear ordered on mobile devices */
+  .masthead-brand{
+    font-size: 2em;
+    font-weight: bolder
+  }
+  
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+@media (min-width: 768px){
+  .info {
+     padding: 0 7.0rem;
+  }
+}
+
+/* Structure for block with text */
+.block {
+    background-color:grey;
+    padding:5px;
+    margin-top: 2cm;
+    
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+/* Allow block to be wider on medium sized devices */
+@media (min-width: 768px){
+  .block {
+    margin-top: 5cm;
+    padding:10px;
+    width:70%;
+  }
+} 
+
+/* Footer*/
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}
